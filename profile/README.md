@@ -1,34 +1,24 @@
 <div align="center">
 
-<img src="peerToPeer.ico" alt="StudyLink Logo" width="80"/>
+# 🎓 ThomasMore-StudyLink
 
-# 🎓 StudyLink — Peer Tutoring Ecosystem
+### Bridging the academic gap through a secure, peer-to-peer knowledge exchange platform.
 
-> *Bridging the academic gap through a secure, peer-to-peer knowledge exchange platform.*
-
-![Status](https://img.shields.io/badge/Status-Academic%20Project-blue?style=flat-square)
 ![Language](https://img.shields.io/badge/Language-C%23-purple?style=flat-square&logo=csharp)
 ![Framework](https://img.shields.io/badge/Framework-WPF%20.NET%2010-blueviolet?style=flat-square)
 ![Database](https://img.shields.io/badge/Database-MySQL%208.0-orange?style=flat-square&logo=mysql)
 ![Platform](https://img.shields.io/badge/Platform-Windows-0078D6?style=flat-square&logo=windows)
+![Status](https://img.shields.io/badge/Status-Academic%20Project-green?style=flat-square)
+
+<br>
+
+## 👉 [Click here to view the StudyLink Desktop App →](https://github.com/ThomasMore-StudyLink/StudyLink-Desktop)
 
 </div>
 
-## 📖 Table of Contents
+## 🧠 About StudyLink
 
-- [About the Project](#-about-the-project)
-- [Features](#-features)
-- [Tech Stack](#-tech-stack)
-- [Diagrams](#-diagrams)
-- [Project Structure](#-project-structure)
-- [How to Run](#-how-to-run)
-- [Database Setup](#-database-setup)
-- [User Roles](#-user-roles)
-- [Team](#-team)
-
-## 🧠 About the Project
-
-**StudyLink** is a desktop peer tutoring marketplace built for 1st and 2nd-year university students facing academic or financial challenges.
+**StudyLink** is a desktop peer tutoring ecosystem built for 1st and 2nd-year university students facing academic or financial challenges.
 
 Professional tutoring is prohibitively expensive, leading to increased stress and higher dropout rates. At the same time, high-achieving upper-year students lack structured ways to monetize their academic expertise.
 
@@ -38,6 +28,12 @@ StudyLink bridges this gap by connecting students with peer tutors in a secure, 
 - Promotes **educational equity** by making tutoring accessible to mid-to-low income students
 - Empowers **upper-year students** to earn income using their academic skills
 - Ensures **quality control** through transparent reviews and administrator oversight
+
+## 🚀 Our Repository
+
+| Repository | Description | Language |
+|---|---|---|
+| [📂 StudyLink-Desktop](https://github.com/ThomasMore-StudyLink/StudyLink-Desktop) | Main WPF desktop application | C# |
 
 ## 🛡️ Features
 
@@ -71,109 +67,11 @@ StudyLink bridges this gap by connecting students with peer tutors in a secure, 
 
 ### Entity Relationship Diagram (ERD)
 
-![ERD](Diagrams/ERD.jpeg)
+![ERD](https://raw.githubusercontent.com/ThomasMore-StudyLink/StudyLink-Desktop/main/Diagrams/ERD.jpeg)
 
 ### UML Class Diagram
 
-![UML](Diagrams/UML.jpeg)
-
-## 📁 Project Structure
-
-```
-StudyLink/
-├── Data/
-│   └── DatabaseHelper.cs         # MySQL connection & query execution
-├── Helpers/
-│   ├── PasswordHelper.cs         # SHA256 hashing logic
-│   └── ValidationHelper.cs       # Input validation utilities
-├── Models/
-│   ├── User.cs
-│   ├── TutorProfile.cs
-│   ├── Booking.cs
-│   ├── BookingDisplay.cs
-│   ├── Review.cs
-│   ├── AvailabilitySlot.cs
-│   └── JuryCase.cs
-├── Services/
-│   └── UserService.cs            # Business logic layer
-├── Views/
-│   ├── AdminDashboardWindow.xaml
-│   ├── BookingWindow.xaml
-│   ├── PaymentWindow.xaml
-│   ├── RegisterWindow.xaml
-│   ├── ReviewWindow.xaml
-│   ├── TutorDashboardWindow.xaml
-│   ├── TutorProfileWindow.xaml
-│   ├── ForgotPasswordWindow.xaml
-│   └── Panels/
-│       ├── StudentPanel.xaml
-│       └── TutorPanel.xaml
-├── Diagrams/
-│   ├── ERD.jpeg
-│   └── UML.jpeg
-├── Wireframes/
-├── App.xaml
-├── MainWindow.xaml
-└── StudyLink.csproj
-```
-
-## 🚀 How to Run
-
-### Prerequisites
-
-Before running StudyLink, make sure you have the following installed:
-
-- [Visual Studio 2022+](https://visualstudio.microsoft.com/) with **.NET Desktop Development** workload
-- [.NET 10.0 SDK](https://dotnet.microsoft.com/en-us/download)
-- [MySQL Server 8.0](https://dev.mysql.com/downloads/mysql/)
-- [MySqlConnector NuGet package](https://www.nuget.org/packages/MySqlConnector)
-
-### Steps
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/ThomasMore-StudyLink/StudyLink-Desktop.git
-   cd StudyLink-Desktop
-   ```
-
-2. **Set up the database** — see [Database Setup](#-database-setup) below
-
-3. **Configure your connection string**
-
-   Open `Data/DatabaseHelper.cs` and update the connection string with your MySQL credentials:
-   ```csharp
-   private static string connectionString =
-       "Server=localhost;Database=studylink;User ID=root;Password=YOUR_PASSWORD;";
-   ```
-
-4. **Open the solution in Visual Studio**
-   ```
-   Open StudyLink.csproj
-   ```
-
-5. **Restore NuGet packages**
-
-   Visual Studio will do this automatically, or run:
-   ```bash
-   dotnet restore
-   ```
-
-6. **Run the project**
-
-   Press `F5` or click the **▶ Run** button in Visual Studio.
-
-## 🗄️ Database Setup
-
-1. Open your MySQL client via CMD:
-   ```bash
-   mysql -u root -p
-   ```
-2. Create and select the database:
-   ```sql
-   CREATE DATABASE studylink;
-   USE studylink;
-   ```
-3. Run the full SQL schema from the `HOW-TO-RUN.md` file included in this repo.
+![UML](https://raw.githubusercontent.com/ThomasMore-StudyLink/StudyLink-Desktop/main/Diagrams/UML.jpeg)
 
 ## 👥 User Roles
 
@@ -187,13 +85,17 @@ Before running StudyLink, make sure you have the following installed:
 
 Built with ❤️ by the **ThomasMore-StudyLink** team.
 
-| Contributor | Role |
+| Contributor | GitHub |
 |---|---|
-| mehmetmetinerdemli | Developer |
-| IsenGrd (Ihsan Mercan) | Developer |
+| Mehmet Metin Erdemli | [@mehmetmetinerdemli](https://github.com/mehmetmetinerdemli) |
+| Ihsan Mercan | [@IsenGrd](https://github.com/IsenGrd) |
 
 <div align="center">
 
-*Made as part of an academic project — Thomas More University*
+*Academic project — Thomas More University of Applied Sciences*
+
+<br>
+
+### [🔗 View StudyLink-Desktop Repository](https://github.com/ThomasMore-StudyLink/StudyLink-Desktop)
 
 </div>
