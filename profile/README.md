@@ -12,7 +12,7 @@
 
 <br>
 
-## 👉 [Click here to view the StudyLink Desktop App →](https://github.com/ThomasMore-StudyLink/StudyLink-Desktop)
+## [Click here to view the StudyLink Desktop App →](https://github.com/ThomasMore-StudyLink/StudyLink-Desktop)
 
 </div>
 
@@ -88,7 +88,7 @@ Built with ❤️ by the **ThomasMore-StudyLink** team.
 | Contributor | GitHub |
 |---|---|
 | Mehmet Metin Erdemli | [@mehmetmetinerdemli](https://github.com/mehmetmetinerdemli) |
-| Ihsan Mercan | [@IsenGrd](https://github.com/IsenGrd) |
+| Ihsan Hamdi Mercan | [@IsenGrd](https://github.com/IsenGrd) |
 
 <div align="center">
 
